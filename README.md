@@ -1,6 +1,5 @@
 ## About 
-React application.
-
+React application that automates the process of internationalization using google-spreadsheet library and i18next framework. 
 ## Requirements
 - Node >= 14.0.0
 - npm >= 5.6 

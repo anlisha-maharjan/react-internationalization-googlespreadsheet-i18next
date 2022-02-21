@@ -6,6 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./configs/theme";
 import "./assets/scss/main.scss";
+import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>

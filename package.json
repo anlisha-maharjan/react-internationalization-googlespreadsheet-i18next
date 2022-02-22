@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "google-spreadsheet": "^3.2.0",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",
     "i18next-http-backend": "^1.3.2",
@@ -20,10 +21,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run fetch:i18n && react-scripts start",
+    "build": "npm run fetch:i18n && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "push:i18n": "node push-google-spreadsheet.js",
+    "fetch:i18n": "node fetch-google-spreadsheet.js"
   },
   "eslintConfig": {
     "extends": [

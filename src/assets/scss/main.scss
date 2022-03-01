@@ -21,33 +21,6 @@
   }
 }
 
-/* --- Flex Box Properties --- */
-.flex-direction {
-  &-column {
-    flex-direction: column;
-  }
-
-  &-row {
-    flex-direction: row;
-  }
-}
-
-.flex {
-  flex: 1;
-
-  &-wrap {
-    flex-wrap: wrap;
-  }
-
-  &-no-wrap {
-    flex-wrap: nowrap;
-  }
-
-  &-shrink-0 {
-    flex-shrink: 0;
-  }
-}
-
 .justify {
   &-content {
     &-between {
@@ -116,58 +89,7 @@
   }
 }
 
-.vertical-align {
-  &-top {
-    vertical-align: top !important;
-  }
-
-  &-middle {
-    vertical-align: middle !important;
-  }
-
-  &-bottom {
-    vertical-align: bottom !important;
-  }
-}
-
-/* --- Visibiltiy & OverFlow --- */
-.overflow-auto {
-  overflow: auto !important;
-}
-
-.overflow-hidden {
-  overflow: hidden !important;
-}
-
-.overflow-visible {
-  overflow: visible !important;
-}
-
-.invisible {
-  visibility: hidden !important;
-}
-
-/* --- Opacity --- */
-@for $i from 0 through 10 {
-  .opacity-#{$i} {
-    opacity: calc(#{$i} * 0.1) !important;
-  }
-}
-
-/* --- z-index --- */
-.z-index-1 {
-  z-index: 1;
-}
-
-.z-index-3 {
-  z-index: 3;
-}
-
 /* --- Width --- */
-.w-min-netural {
-  min-width: initial !important;
-}
-
 .w-auto {
   width: auto !important;
 }
@@ -203,28 +125,6 @@
 
 .h-100vh {
   height: 100vh !important;
-}
-
-/* --- max height --- */
-.max-h-20 {
-  max-height: 20rem !important;
-}
-
-.max-h-30 {
-  max-height: 30rem !important;
-}
-
-.max-h-40 {
-  max-height: 40rem !important;
-}
-
-.max-h-50 {
-  max-height: 50rem !important;
-}
-
-/* --- Translate --- */
-.translate-0 {
-  transform: translate(0) !important;
 }
 
 /* --- Paddings All --- */
@@ -317,61 +217,6 @@
   margin-right: auto !important;
 }
 
-/* --- Positions --- */
-.pos {
-  &-relative {
-    position: relative !important;
-  }
-
-  &-absolute {
-    position: absolute !important;
-  }
-
-  &-fixed {
-    position: fixed !important;
-  }
-
-  &-sticky {
-    position: static !important;
-  }
-
-  &-static {
-    position: static !important;
-  }
-
-  &-top {
-    @for $i from 0 through 100 {
-      &-per-#{$i} {
-        top: calc(#{$i} * 1%) !important;
-      }
-    }
-  }
-
-  &-bottom {
-    @for $i from 0 through 100 {
-      &-per-#{$i} {
-        bottom: calc(#{$i} * 1%) !important;
-      }
-    }
-  }
-
-  &-left {
-    @for $i from 0 through 100 {
-      &-per-#{$i} {
-        left: calc(#{$i} * 1%) !important;
-      }
-    }
-  }
-
-  &-right {
-    @for $i from 0 through 100 {
-      &-per-#{$i} {
-        right: calc(#{$i} * 1%) !important;
-      }
-    }
-  }
-}
-
 /* --- Fonts Styles --- */
 .font {
   &-size {
@@ -455,33 +300,6 @@
   }
 }
 
-.word-break {
-  &-all {
-    word-break: break-all;
-  }
-
-  &-word {
-    word-break: break-word;
-  }
-}
-
-/* --- Line Height --- */
-.line-height-default {
-  line-height: 1 !important;
-}
-
-.line-height-2x {
-  line-height: 2 !important;
-}
-
-.line-height-3x {
-  line-height: 3 !important;
-}
-
-.line-height-null {
-  line-height: 0 !important;
-}
-
 /* --- Border --- */
 @for $i from 0 through 5 {
   .border-#{$i} {
@@ -526,20 +344,11 @@
     border-color: #a0adbb !important;
   }
 
-  &-light-grey {
-    border-color: #efefef !important;
-  }
-
-  &-fade-blue {
-    border-color: #eaf0f9 !important;
-  }
-
   &-transparent {
     border-color: transparent !important;
   }
 }
 
-// border radius
 .border-rad {
   &-0 {
     border-radius: 0 !important;
@@ -628,99 +437,6 @@
       height: 100%;
       object-fit: contain;
     }
-  }
-
-  &-round {
-    border-radius: 50%;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &-size {
-    &-xl {
-      width: 20rem !important;
-      height: 20rem !important;
-      font-size: 8rem !important;
-    }
-  }
-}
-
-.object {
-  &-fit {
-    &-contain {
-      object-fit: contain !important;
-    }
-
-    &-cover {
-      object-fit: cover !important;
-    }
-
-    &-fill {
-      object-fit: fill !important;
-    }
-  }
-}
-
-/* --- SVG Size --- */
-.svg-size {
-  &-flexible {
-    svg {
-      width: 100% !important;
-      height: auto !important;
-    }
-  }
-
-  &-fill {
-    svg {
-      width: 100% !important;
-      height: 100% !important;
-    }
-  }
-
-  &-large {
-    svg {
-      width: 8rem !important;
-      height: auto !important;
-    }
-  }
-
-  &-medium {
-    svg {
-      width: 6rem !important;
-      height: auto !important;
-    }
-  }
-
-  &-small {
-    svg {
-      width: 1.8rem !important;
-      height: 1.8rem !important;
-    }
-  }
-
-  &-xs {
-    svg {
-      width: 1.2rem !important;
-      height: 1.2rem !important;
-    }
-  }
-
-  &-compact {
-    svg {
-      width: 8rem !important;
-      height: 5rem !important;
-    }
-  }
-}
-
-.svg-opacity-1 {
-  svg {
-    opacity: 1;
   }
 }
 

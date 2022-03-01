@@ -16,21 +16,21 @@ const init = async () => {
   });
 };
 
-const traverse = function (enObj, fiObj, arr) {
+const traverse = function (enObj, noObj, arr) {
   const enObjData = enObj.data;
-  const fiObjData = fiObj.data;
+  const noObjData = noObj.data;
   for (const i in enObjData) {
     if (enObjData[i] !== null && typeof enObjData[i] == "object") {
       //# going one step down in the object tree!!
       const label = enObj.label !== "" ? `${enObj.label}.${i}` : `${i}`;
       const childEn = { label: label, data: enObjData[i] };
-      const childFi = { label: label, data: fiObjData[i] };
-      traverse(childEn, childFi, arr);
+      const childNo = { label: label, data: noObjData[i] };
+      traverse(childEn, childNo, arr);
     } else {
       arr.push({
         key: enObj.label !== "" ? `${enObj.label}.${i}` : `${i}`,
         en: enObjData[i],
-        fi: fiObjData[i],
+        no: noObjData[i],
       });
     }
   }
@@ -46,16 +46,16 @@ const read = async () => {
     encoding: "utf8",
     flag: "r",
   });
-  //# read /public/locales/fi/translation.json
-  const fi = fs.readFileSync(`./public/locales/fi/translation.json`, {
+  //# read /public/locales/no/translation.json
+  const no = fs.readFileSync(`./public/locales/no/translation.json`, {
     encoding: "utf8",
     flag: "r",
   });
   const enObj = { label: "", data: JSON.parse(en) };
-  const fiObj = { label: "", data: JSON.parse(fi) };
+  const noObj = { label: "", data: JSON.parse(no) };
   //# loop over JSON object and create new array
   // eslint-disable-next-line no-undef
-  const result = traverse(enObj, fiObj, (arr = []));
+  const result = traverse(enObj, noObj, (arr = []));
   //# difference between google-spreadsheet rows and newly created array
   const el = result.filter(
     ({ key: id1 }) => !rows.some(({ key: id2 }) => id2 === id1)

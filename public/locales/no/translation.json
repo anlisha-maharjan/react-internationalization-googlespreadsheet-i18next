@@ -1,0 +1,8 @@
+{
+  "APP": {
+    "WELCOME": "Velkommen!!",
+    "TITLE": "Automatisering av internasjonalisering med Google Spreadsheet og i18next",
+    "SUBTITLE": "Google-regneark gjør prosessen med å sende rundt filen foreldet og mer praktisk. Ved å bruke automatiseringsverktøyene som oppdaterer og laster ned Google-regnearkdataene, kan utviklere be om oversettelse uavhengig av hvilken gren den er basert på siden alle nøklene er inkludert i regnearket. De klare fordelene ligger i det faktum at du ikke trenger versjonskontroll, i motsetning til å sende filen rundt.",
+    "DESCRIPTION": "Siden Google-regneark er tilgjengelig for alle med en nettleser, kan arrangører og oversettere enkelt få tilgang til dataene uten å installere et eget verktøy. La oss nå se hvordan vi kan forbedre delene av internasjonalisering som er tidkrevende og feilutsatte ved å bruke Googles regneark og automatiseringsverktøy."
+  }
+}

@@ -12,7 +12,7 @@ i18n
   .use(initReactI18next) // pass the i18n instance to react-i18next.
   .init({
     fallbackLng, // fallback language is english.
-    preload: ["en", "fi"],
+    preload: ["en", "no"],
     detection: {
       checkWhitelist: true, // options for language detection
     },

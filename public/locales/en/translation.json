@@ -1,4 +1,8 @@
 {
-  "WELCOME": "Welcome",
-  "TITLE": "Title"
+  "APP": {
+    "WELCOME": "Welcome!!",
+    "TITLE": "Automating Internationalization with Google Spreadsheet and i18next",
+    "SUBTITLE": "Google spreadsheets make the process of passing around the file obsolete and more convenient. Using the automation tools that update and download the Google spreadsheet data allows developers to request translation regardless of which branch it is based on since all keys are included in the spreadsheet. The clear advantages lie in the fact that you don't need version control, unlike passing the file around.",
+    "DESCRIPTION": "Since Google spreadsheets are available for anyone with a browser, organizers and translators can easily access the data without installing a separate tool. Now, let’s see how we can improve the parts of internationalization that are time-consuming and error-prone using Google spreadsheets and automation tools."
+  }
 }

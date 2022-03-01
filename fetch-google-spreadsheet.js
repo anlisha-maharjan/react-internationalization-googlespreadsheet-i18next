@@ -24,6 +24,7 @@ const read = async () => {
   const rows = await sheet.getRows({ limit: sheet.rowCount }); //# fetch rows from the sheet (limited to row count)
   let result = {};
   //# map rows values and create an object with keys as columns titles starting from the second column (languages names) and values as an object with key value pairs, where the key is a key of translation, and value is a translation in a respective language
+  // eslint-disable-next-line array-callback-return
   rows.map((row) => {
     colTitles.slice(1).forEach((title) => {
       result[title] = result[title] || [];

@@ -1,3 +1,5 @@
+⚠️ [This project is no longer maintained](https://github.com/anlisha-maharjan/react-internationalization-googlespreadsheet-i18next/issues/1) ⚠️
+
 ## About
 
 React application that automates the process of internationalization using google-spreadsheet plugin, v4 google sheets API and i18next framework.
